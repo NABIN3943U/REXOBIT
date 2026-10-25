@@ -15,7 +15,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "BitChord"
+rootProject.name = "REXOBIT"
 include(":shared")
 include(":sharedUi")
 
@@ -24,7 +24,7 @@ include(":sharedUi")
 // configuration time — before the desktop module it has nothing to do with can
 // build at all.
 // Read as a Properties file, not line by line: Android Studio writes the path
-// escaped (`C\:\Users\...` on Windows), and only Properties undoes that.
+// escaped (C:\Users\... on Windows), and only Properties undoes that.
 val androidSdk: String? = file("local.properties")
     .takeIf { it.isFile }
     ?.let { f -> java.util.Properties().apply { f.inputStream().use(::load) } }
